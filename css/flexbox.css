@@ -1,0 +1,344 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* FedFlexbox
+-----------------------------------------------------------------------------*/
+.f {
+	display: flex;/* Включить флекс */
+	box-sizing: border-box;/* Чтобы при паддинге за края не выходило, не плыло */
+	align-items: flex-start;/* Выравнивание по вертикали, к верху*/
+}
+.f div {
+	box-sizing: border-box;/* Чтобы при паддинге за края не выходило, не плыло */
+}
+.fw {
+	flex-wrap: wrap;/* Чтобы блоки могли переходить на след строку */
+}
+.fr {
+	flex-direction: row;/* Флекс по x */
+}
+.fc {
+	flex-direction: column;/* Флекс по y */
+}
+.ac {
+	align-items: center;/* Если по х, то ценрует по вертикали, Если по y по горизонтали */
+}
+.jc {
+	justify-content: center;/* Если по х, то ценрует по горизонтали, Если по y по вертикали */
+}
+.sb {
+	justify-content: space-between;/* выравнивает к краям, оставляя между блоками расстояние */
+}
+.sa {
+	justify-content: space-around;/* отступы вокруг */
+}
+.fs {
+	justify-content: flex-start;/* слева направо по x, сверху вниз по y */
+}
+.fe {
+	justify-content: flex-end;/* справа на лево по x, снизу вверх по y */
+}
+.w1 {width:7.08% !important;}
+.w2 {width:15.42% !important;}
+.w3 {width:23.75% !important;}
+.w4 {width:32.5% !important;}
+.w5 {width:40.42% !important;}
+.w6 {width:49% !important;}
+.w7 {width:57.08% !important;}
+.w8 {width:65.42% !important;}
+.w9 {width:73.75% !important;}
+.w10 {width:82.08% !important;}
+.w11 {width:90.42% !important;}
+.w12 {width:100% !important;}
+.w100 {
+	width: 100%;
+}
+.wa {
+	width: auto !important;
+}
+/* FedFlexbox
+-----------------------------------------------------------------------------*/
+form .ac .styler, form .ac label, form .ac .btn {
+	margin-bottom: 10px;
+	margin-right: 15px;
+
+}
+.tbl {
+	flex-wrap: wrap;
+	margin: 20px 0;
+	width: 100%;
+}
+.tbl, .body-tbl, .ttl-tbl, .param-tbl, .action-tbl, .tr {
+	justify-content: space-between;
+	display: flex;
+}
+.tr {
+	width: 100%;
+	align-items: center;
+	box-sizing: border-box;
+	
+}
+.th {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	text-align: center;
+	align-items: center;
+	box-sizing: border-box;
+	
+}
+.tr:nth-child(odd) {
+	    background-color: #f5f7f9;
+} 
+.td {
+	padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tbl .abtn {
+	margin-right: 10px;
+}
+/* Adaptive
+-----------------------------------------------------------------------------*/
+@media screen and (max-width: 1600px) {
+	.w4 .tbl .th {
+		display: none;
+	}
+	.w4 .param-tbl .td {
+		padding: 5px;
+		font-size: 12px;
+	}
+	.w4 .param-tbl {
+	
+		padding-bottom: 10px;
+	}
+	.w4 .body-tbl, .w4 .param-tbl {
+		flex-direction: column;
+		justify-content: center;
+	align-items: flex-start;
+	}
+		.w4 .body-tbl.w8 {
+		box-sizing: border-box;
+		width: 60% !important;
+	}
+	.w4 .body-tbl .ttl-tbl {
+		width: 100% !important;
+	}
+	.w4 .body-tbl .param-tbl {
+		width: 100% !important;
+	}
+	.w4 .action-tbl.w4 {
+		box-sizing: border-box;
+		width: 40% !important;
+	}
+.w4 .body-tbl .td, .w4 .param-tbl .td{
+		justify-content:flex-start;
+	
+	}
+	.w4 .ttl-tbl {
+		justify-content: flex-start !important;
+	}
+	.w4 .ttl-tbl .td {
+		width: auto !important;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+		.w4 .body-tbl.w8 {
+		box-sizing: border-box;
+		width: 50% !important;
+	}
+	.w4 .action-tbl.w4 {
+		box-sizing: border-box;
+		width: 50% !important;
+	}
+	.w6 .th {
+		display: none;
+	}
+	.w6 .body-tbl, .w6 .param-tbl {
+		flex-direction: column;
+		justify-content: center;
+	align-items: flex-start;
+	}
+	.w6 .body-tbl.w8 {
+		box-sizing: border-box;
+		width: 60% !important;
+	}
+	.w6 .action-tbl.w4 {
+		box-sizing: border-box;
+		width: 40% !important;
+	}
+.w6 .body-tbl .td, .w6 .param-tbl .td{
+		justify-content:flex-start;
+	
+	}
+}
+@media screen and (max-width: 1152px) {
+	table .abtn {
+		margin-bottom: 5px;
+    display: inline-block;
+	}
+}
+@media screen and (max-width: 1024px) { 
+	.butcont label {
+		display: none;
+	}
+	.butcont input[type=submit].btn {
+    padding-left:14px;
+}
+	.w4 .body-tbl.w8 {
+		box-sizing: border-box;
+		width: 60% !important;
+	}
+	.w4 .action-tbl.w4 {
+		box-sizing: border-box;
+		width: 40% !important;
+	}
+.w4 {width:49.3% !important;}
+
+}
+@media screen and (max-width: 800px) { 
+	.con.f {
+		flex-direction: column;
+	}
+	.cnt.w6 {
+		width: 100% !important;
+	}
+	.cnt.w4 {
+		width: 100% !important;
+	}
+	
+	.con.f .tbl .w1 {width:7.08% !important;}
+.con.f .tbl .w2 {width:15.42% !important;}
+.con.f .tbl .w3 {width:23.75% !important;}
+.con.f .tbl .w4 {width:32.5% !important;}
+.con.f .tbl .w5 {width:40.42% !important;}
+.con.f .tbl .w6 {width:49.3% !important;}
+.con.f .tbl .w7 {width:57.08% !important;}
+.con.f .tbl .w8 {width:65.42% !important;}
+.con.f .tbl .w9 {width:73.75% !important;}
+.con.f .tbl .w10 {width:82.08% !important;}
+.con.f .tbl .w11 {width:90.42% !important;}
+.con.f .tbl .w12 {width:100% !important;}
+.con.f .tbl .w100 {
+	width: 100%;
+}
+
+		.con.f .w4 .tbl .body-tbl.w8 {
+		box-sizing: border-box;
+		width: 50% !important;
+	}
+	.con.f .w4 .tbl .action-tbl.w4 {
+		box-sizing: border-box;
+		width: 50% !important;
+	}
+	.con.f .w4 .body-tbl .ttl-tbl {
+		width: 100% !important;
+	}
+	.con.f .w4 .body-tbl .param-tbl {
+		width: 100% !important;
+	}
+	.con.f .w6 .tbl .body-tbl.w8 {
+		box-sizing: border-box;
+		width: 50% !important;
+	}
+	.con.f .w6 .tbl .action-tbl.w4 {
+		box-sizing: border-box;
+		width: 50% !important;
+	}
+	.con.f .w6 .body-tbl .ttl-tbl {
+		width: 100% !important;
+	}
+	.con.f .w6 .body-tbl .param-tbl {
+		width: 100% !important;
+	}
+	.con.f .w100 .tbl .body-tbl.w8 {
+		box-sizing: border-box;
+		width: 50% !important;
+	}
+	.con.f .w100 .tbl .action-tbl.w4 {
+		box-sizing: border-box;
+		width: 50% !important;
+	}
+	.con.f .w100 .body-tbl .ttl-tbl {
+		width: 100% !important;
+	}
+	.con.f .w100 .body-tbl .param-tbl {
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-width: 533px) { 
+
+	.w100 .th {
+		display: none;
+	}
+	.w100 .body-tbl, .w100 .param-tbl {
+		flex-direction: column;
+		justify-content: center;
+	align-items: flex-start;
+	}
+	.w100 .body-tbl.w8 {
+		box-sizing: border-box;
+		width: 60% !important;
+	}
+	.w100 .action-tbl.w4 {
+		box-sizing: border-box;
+		width: 40% !important;
+	}
+.w100 .body-tbl .td, .w100 .param-tbl .td{
+		justify-content:flex-start;
+	
+	}
+}
+@media screen and (max-width: 414px) { 
+	form .w6 {
+		width: 100% !important;
+	}
+	.wa {
+    width: 100% !important;
+}
+	.ac {
+    align-items: center;
+    flex-wrap: wrap;
+}
+	form .ac .styler, form .ac label, form .ac .btn {
+    margin-bottom: 15px;
+    margin-right: 0px;
+}
+	.w4 .param-tbl {
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+	.td {
+		padding: 5px;
+	}
+
+}
+@media screen and (max-width: 360px) { 
+	.tr {
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.con.f .w4 .tbl .action-tbl.w4 {
+		width: 100% !important;
+		margin-bottom: 10px;
+	}
+	.con.f .w6 .tbl .action-tbl.w4 {
+		width: 100% !important;
+		margin-bottom: 10px;
+	}
+		.con.f .w100 .tbl .action-tbl.w4 {
+		width: 100% !important;
+		margin-bottom: 10px;
+	}
+		.con.f .tbl .action-tbl .td {
+		width: 50% !important;
+	}
+	
+
+}

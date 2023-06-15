@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	
+}
+.jqueryslidemenu {
+	box-shadow: 0 2px 2px rgb(112, 125, 146, 0.2);
+    background-color: #2581d4;
+
+}
+ul#my-menu a {color:#2c4a65;box-shadow: 0 2px 2px rgb(112, 125, 146, 0.2);}
+ul#my-menu li ul  {color:#2c4a65;box-shadow: 0 2px 2px rgb(112, 125, 146, 0.2);}
+.btn  {color:#2c4a65;box-shadow: 0 2px 2px rgb(112, 125, 146, 0.2);}
+.bigblock  {color:#2c4a65;box-shadow: 0 2px 2px rgb(112, 125, 146, 0.2);}
+.jqueryslidemenu ul li ul li a { background-color: #2078C8;}
+.jqueryslidemenu ul li a:hover { background-color: #2E8CE3;}
+.jqueryslidemenu ul li ul li a:hover { background-color: #2884D8;}
+.bgcolor1 {background-color: #e8ebf0;}
+.bgcolor2 {background-color: #fff;}
+.color1 {color:#fff;}
+.color2 {color:#2581d4;}
+.color3 {color:#2c4a65;}
+
+
+ul#my-menu a.expanded { 
+	background-color: #2581d4;
+	color: #fff;
+}
+	ul#my-menu a.collapsed:hover { 
+		
+	box-shadow: 0 4px 4px rgb(112, 125, 146, 0.2);color:#264057;
+	 }
+.btn-theme {
+	background-color: #2581d4;
+	color: #fff !important;
+}
+.abtn-theme {
+	
+	color: #2581d4 !important;
+}
+.abtn-theme:hover {
+	
+	color: #2B8DE5 !important;
+}
+.btn-theme:hover {
+	background-color: #2989E0;
+	color: #fff !important;
+}
+.styler{
+	color: #222629;
+	outline: none !important;
+	font-family: 'Roboto';
+	font-size: 14px !important;
+	line-height: 14px;
+	width: 100%;
+	padding: 10px 15px !important;
+	margin-bottom: 20px;
+	display: block;
+	font-weight: 300 !important;
+	box-sizing: border-box;
+	background-color: #fff;
+	border:1px solid #CCCCCC;
+	border-radius: 3px !important;
+	box-shadow: none !important;
+		transition: all 0.3s 0.0s ease;
+-moz-transition: all 0.3s 0.0s ease;
+-o-transition: all 0.3s 0.0s ease;
+-webkit-transition: all 0.3s 0.0s ease;
+}
+.stylermini {padding: 7px 7px !important; margin-bottom: 0;}
+.styler:hover {
+	background-color: #FBFBFB;
+	border:1px solid #B7B7B7;
+}
+.styler:focus {
+	background-color: #F8F8F8;
+	border:1px solid #B7B7B7;
+}
+@media screen and (max-width: 960px){
+#header {
+    margin-bottom: 20px;
+    border-bottom: 4px solid #e0e3e8;
+}
+}
